@@ -1,12 +1,13 @@
 {
-  "name": "onchain-agent-starter",
+  "name": "autonomous-onchain-ai-agent",
   "version": "1.0.0",
-  "description": "Waterloo Blockchain — Onchain Agent Workshop starter repo",
+  "description": "Autonomous AI agent capable of executing onchain transactions using Coinbase AgentKit and Vercel AI SDK",
   "type": "module",
   "scripts": {
-    "wallet": "npx tsx src/wallet.ts",
-    "transactions": "npx tsx src/transactions.ts",
-    "start": "npx tsx src/index.ts"
+    "wallet": "tsx src/wallet.ts",
+    "transactions": "tsx src/transactions.ts",
+    "agent": "tsx src/repl.ts",
+    "server": "tsx src/x402-server.ts"
   },
   "dependencies": {
     "@ai-sdk/google": "^1.2.22",
